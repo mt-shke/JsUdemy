@@ -83,11 +83,11 @@ console.log(data);
 ##### loadNPause();
 
 3.  const loadAll = async function (imgArr) {
-    try {
-      let arrPromise = imgArr.map(async img => await createImage(img));
-     let array = await Promise.all(arrPromise);
-     console.log(array);
-      array.forEach(arr => arr.classList.add('parallel'));
+     try {
+        -  let arrPromise = imgArr.map(async img => await createImage(img));
+      - let array = await Promise.all(arrPromise);
+    -  console.log(array);
+     -    array.forEach(arr => arr.classList.add('parallel'));
     } catch (err) {
        console.log(err.message);
     }
