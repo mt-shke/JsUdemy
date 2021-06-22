@@ -57,21 +57,21 @@ console.log(data);
   })
   .catch(err => console.log(err, err.message));
 
-//////////////////
+##### loadNPause
 
 2. const loadNPause = async function () {
    try {
-   ###### img 1
+   ###### // img 1
    let img = await createImage('img/img-1.jpg');
    // if (!img.ok) throw new Error(err => console.error('pic1', err.message));
    await wait(2);
    img.style.display = 'none';
-   ###### img 2
+   ###### // img 2
    img = await createImage('img/img-2.jpg');
    // if (!img.ok) throw new Error(err => console.error('pic2', err.message));
    await wait(2);
    img.style.display = 'none';
-  ###### pic3
+  ###### // img 3
    img = await createImage('img/img-3.jpg');
    // if (!img.ok) throw new Error(err => console.error('pic1', err.message));
    await wait(2);
@@ -80,7 +80,7 @@ console.log(data);
    }
    };
 
-// loadNPause();
+##### loadNPause();
 
 3.  const loadAll = async function (imgArr) {
     try {
