@@ -2,11 +2,11 @@
 
 ## Starter install
 
-npm install -g npm
-npm i parcel@next -D
-npm i sass@next -D
-npm i core-js regenerator-runtime // Polyfilling
-npm start
+###### npm install -g npm
+###### npm i parcel@next -D
+###### npm i sass@next -D
+###### npm i core-js regenerator-runtime // Polyfilling
+###### npm start
 
 ---
 
