@@ -1,9 +1,9 @@
 ## Object Oriented Programming
 
-Abstraction > focus on principe (UX)
-Encapsulation > Private data, accessible by conditions
-Inheritance > Main data given to child
-Polymorphism > Main data + modified data
+ Abstraction > focus on principe (UX)
+ Encapsulation > Private data, accessible by conditions
+ Inheritance > Main data given to child
+ Polymorphism > Main data + modified data
 
 ---
 
