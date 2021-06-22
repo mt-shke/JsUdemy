@@ -12,7 +12,7 @@
    - applications/maps = ressources
 
 2. Client -> DNS
-   - Domain name -> Ip adress
+   - Domain name -> Ip address
 
 #### Ajax call
 
@@ -61,17 +61,17 @@ console.log(data);
 
 2. const loadNPause = async function () {
    try {
-   // img 1
+   ###### img 1
    let img = await createImage('img/img-1.jpg');
    // if (!img.ok) throw new Error(err => console.error('pic1', err.message));
    await wait(2);
    img.style.display = 'none';
-   // img 2
+   ###### img 2
    img = await createImage('img/img-2.jpg');
    // if (!img.ok) throw new Error(err => console.error('pic2', err.message));
    await wait(2);
    img.style.display = 'none';
-   // pic3
+  ###### pic3
    img = await createImage('img/img-3.jpg');
    // if (!img.ok) throw new Error(err => console.error('pic1', err.message));
    await wait(2);
@@ -84,12 +84,12 @@ console.log(data);
 
 3.  const loadAll = async function (imgArr) {
     try {
-    let arrPromise = imgArr.map(async img => await createImage(img));
-    let array = await Promise.all(arrPromise);
-    console.log(array);
-    array.forEach(arr => arr.classList.add('parallel'));
+      let arrPromise = imgArr.map(async img => await createImage(img));
+     let array = await Promise.all(arrPromise);
+     console.log(array);
+      array.forEach(arr => arr.classList.add('parallel'));
     } catch (err) {
-    console.log(err.message);
+       console.log(err.message);
     }
     };
 
