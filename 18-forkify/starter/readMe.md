@@ -116,6 +116,8 @@ helper: setTimeout(), getJSON( res = Promise.race([fetch, setTimeout(TIMEOUT_SEC
 - Submit form
 - const dataArr = [...new FormData(this)];
 - const data = Object.fromEntries(dataArr); // ≠ Object.entries()
+- // for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
 
 ###### Upload recipe to Api server
 
