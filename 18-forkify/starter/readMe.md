@@ -120,12 +120,18 @@ helper: setTimeout(), getJSON( res = Promise.race([fetch, setTimeout(TIMEOUT_SEC
 ###### Upload recipe to Api server
 
 1. const fetchPro = fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(uploadData),
-    });
- - const res = await Promise.race([fetchPro, timeout(TIMEOUT_SEC)]);
+   method: 'POST',
+   headers: {
+   'Content-Type': 'application/json',
+   },
+   body: JSON.stringify(uploadData),
+   });
 
-2. Insert checkedData? in object{  ...(recipe.key && { key: recipe.key }),}
+- const res = await Promise.race([fetchPro, timeout(TIMEOUT_SEC)]);
+
+2. Insert checkedData? in object{ ...(recipe.key && { key: recipe.key }),}
+
+- window.history.pushState(null, "", `#${model.state.recipe.id}`);
+- window.history.back()
+
+- .gitignore
