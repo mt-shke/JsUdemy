@@ -90,3 +90,42 @@ helper: setTimeout(), getJSON( res = Promise.race([fetch, setTimeout(TIMEOUT_SEC
 - recipeView.addHandledUpDateServings -> dataset -> +updapteTo +/- 1
 
 #### Update Dom
+
+#### Bookmark
+
+###### export const addBookmark = function (recipe) {
+
+- state.bookmarks.push(recipe);
+- if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;}
+
+###### const deleteBookmark = function(id) {
+
+- const index = state.bookmarks.findIndex(el => el.id === id);
+- state.bookmarks.splice(index, 1);
+- if (recipe.id === state.recipe.id) state.recipe.bookmarked = false;
+  }
+
+###### Storing bookmark to localStorage
+
+###### Add New Recipe
+
+1. Overlay -> this.overlay.classList.toggle('hidden'); -> addHandlerShowWindow() {
+
+2. this.\_btnOpen.addEventListener('click', this.toggleWindow.bind(this))
+
+- Submit form
+- const dataArr = [...new FormData(this)];
+- const data = Object.fromEntries(dataArr); // ≠ Object.entries()
+
+###### Upload recipe to Api server
+
+1. const fetchPro = fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(uploadData),
+    });
+ - const res = await Promise.race([fetchPro, timeout(TIMEOUT_SEC)]);
+
+2. Insert checkedData? in object{  ...(recipe.key && { key: recipe.key }),}
